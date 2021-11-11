@@ -173,5 +173,5 @@ function tre() {
 # copy airflow dags to anywhere with the schedule option turned off
 # for default airflow installations that start turned on
 function acp() {
-	sed 's/schedule_interval\=.*/schedule_interval=None,/g' "$1" | xargs -I{} cp {} "$2"
+	sed 's/schedule_interval\=.*/schedule_interval=None,/g' "$1" > "$2"
 }
