@@ -16,7 +16,6 @@
 	p = pull --recurse-submodules
 
     # Push and set-upstream
-
     pushup = push --set-upstream
 
 	# Clone a repository including all submodules.
