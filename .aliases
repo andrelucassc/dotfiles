@@ -27,6 +27,14 @@ for entity in "${entities[@]}"; do
 	alias "unmount${entity}"="fusermount -u \${$local_FLDR}"
 done
 
+for bucket in "${buckets[@]}"; do
+    local_BCKT=${bucket}_BCKT
+    local_FLDR=${bucket}_FLDR
+
+    alias "mount${bucket}"="s3fs \${$local_BCKT} \${$local_FLDR}"
+    alias "unmount${entity}"="fusermount -u \${$local_FLDR}"
+done
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
