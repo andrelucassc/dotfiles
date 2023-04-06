@@ -5,6 +5,8 @@ export EDITOR='vim';
 
 # Set Gradle Home Path
 export GRADLE_USER_HOME=/tmp/.gradle
+# Set Go Home Path
+export GOPATH=/tmp/gopath
 
 # Make Python use UTF-8 encoding for output to stdin, stdout, and stderr.
 export PYTHONIOENCODING='UTF-8';
