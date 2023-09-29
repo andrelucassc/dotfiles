@@ -39,6 +39,11 @@ if [ -d "/usr/local/opt/chruby/share/chruby" ] ; then
 	eval "$(jenv init -)"
 fi
 
+# Brew
+if [ -d "/opt/homebrew" ] ; then
+	export PATH="/opt/homebrew/bin:$PATH"
+fi
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
