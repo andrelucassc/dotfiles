@@ -33,10 +33,9 @@ if [ -d "$HOME/projects/airflow" ] ; then
 fi
 
 # config chruby if available
-if [ -d "/usr/local/opt/chruby/share/chruby" ] ; then
-	source /usr/local/opt/chruby/share/chruby/chruby.sh
-	source /usr/local/opt/chruby/share/chruby/auto.sh
-	eval "$(jenv init -)"
+if [ -d "/opt/homebrew/opt/chruby/share/chruby" ] ; then
+	source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+	source /opt/homebrew/opt/chruby/share/chruby/auto.sh
 fi
 
 # config psql if available
