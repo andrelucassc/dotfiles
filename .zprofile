@@ -39,6 +39,11 @@ if [ -d "/usr/local/opt/chruby/share/chruby" ] ; then
 	eval "$(jenv init -)"
 fi
 
+# config psql if available
+if [ -d "/opt/homebrew/opt/libpq/bin" ] ; then
+    export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+fi
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
