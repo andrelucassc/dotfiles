@@ -17,8 +17,8 @@ fi
 
 # config jenv if available
 if [ -d "$HOME/.jenv" ] ; then
-	export JENV_ROOT="$HOME/.jenv"
-	export PATH="$JENV_ROOT/bin:$PATH"
+    export PATH="$HOME/.jenv/bin:$PATH"
+    eval "$(jenv init -)"
 fi
 
 # config poetry if available
