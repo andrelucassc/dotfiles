@@ -21,8 +21,8 @@
     # Clone a repository including all submodules.
     c = clone --recursive
 
-	# Commit all changes.
-	ca = !git add ':(exclude,attr:builtin_objectmode=160000)' && git commit -av
+    # Commit all changes.
+    ca = !git add ':(exclude,attr:builtin_objectmode=160000)' && git commit -av
 
     # Switch to a branch, creating it if necessary.
     go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
@@ -197,3 +197,7 @@
 [init]
 
     defaultBranch = main
+
+[user]
+    email = 20599467+andrelucassc@users.noreply.github.com
+    name = André Gustavo Lucas
