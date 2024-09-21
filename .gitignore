@@ -15,3 +15,6 @@ Thumbs.db
 
 # Variables
 .variables
+
+# IDEs
+.idea
